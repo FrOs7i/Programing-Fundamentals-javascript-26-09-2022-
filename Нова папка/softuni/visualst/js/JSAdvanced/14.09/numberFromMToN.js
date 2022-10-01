@@ -4,5 +4,5 @@ function numberFromMToN(numberOne,numberTwo){
         numberOne--
     }
 }
-numberFromMToN(4,1)
+numberFromMToN(100,40)
     
