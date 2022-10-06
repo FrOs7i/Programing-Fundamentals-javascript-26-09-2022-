@@ -1,13 +1,26 @@
-function specialNumbers(lastNum) {
-    let boolean = true
-    let sum = 0
-    for (let currNum = 1; currNum <= lastNum; currNum++) {
-        let numberAsString = currNum.toString();
-        if (numberAsString.lenght = "0") {
-if (condition) {
-    
-}
+function specialNumbers(num) {
+    let isSpecial = true
+    for (let currNum = 1; currNum <= num; currNum++) {
+        let sumOfDIgits = 0
+        let numberToSting = currNum.toString()
+        let stringLength = numberToSting.length
+        for (let index = 0; index < stringLength; index++) {
+
+            if (currNum >= 10) {
+                sumOfDIgits += Number(numberToSting[index])
+            } else {
+                sumOfDIgits += Number([currNum])
+            }
+
         }
+        if (sumOfDIgits == 5 || sumOfDIgits == 7 || sumOfDIgits == 11) {
+            isSpecial = true
+            console.log(`${currNum} -> True`);
+        } else {
+            isSpecial = false
+            console.log(`${currNum} -> False`);
+        }
+
 
     }
 }
